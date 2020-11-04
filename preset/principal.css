@@ -8,7 +8,7 @@ body{
 	padding:0;
 
 
-background-image:url("../image/fond1.jpg");
+background-image:url("../image/fond2.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -24,7 +24,7 @@ header
 	height: 10%;
 	text-align: center;
 line-height: 70px;
-	background: linear-gradient(#b13523,#22c1c3);
+	background-image: url("../image/fond1.jpg");
 	display:flex;
 
 	text-align: center;
@@ -45,7 +45,10 @@ justify-content: space-around;
 width: 100%
 }
 
-
+.Apropos{
+	margin-top: 50%;
+	margin-bottom:50%;
+}
 
 
  section
@@ -61,10 +64,22 @@ width: 100%
 
 
 
+.Experienceprofessionel{
+	margin-top: 50%;
+	margin-bottom:50%;
+}
+
 
 .experience
 {
 display: flex;
+width: 100%;
+margin left:auto;
+margin-right: auto;
+ justify-content:center;
+ transform: translate(-%);
+
+
 
 
 
@@ -77,6 +92,7 @@ display: flex;
 .contener{
 	display: flex;
 flex-direction: column;
+width: 100%;
 
 }
 
@@ -102,6 +118,7 @@ widht:470px;
 .charal{
 	display: block;
 	list-style-type: none;
+
 }
 
 .pastoral{display: block;
@@ -113,6 +130,13 @@ widht:470px;
 .info{display: block;
 	list-style-type: none;
 }
+
+.formation{
+	margin-top: 30%;
+	margin-bottom:30%;
+}
+
+
 
 .SISR{
 	display: block;
@@ -174,6 +198,7 @@ widht:470px;
 
 .sm_side a:hover:nth-child(4)::after
 {
+
     content: 'Steven.aubert';
     margin-left: 12px;
 }
