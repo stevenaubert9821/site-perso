@@ -183,12 +183,13 @@ Option SISR : Administration des systèmes et des réseaux : le titulaire partic
 
 									<div class="sm_side">
 
-<h3><u>contacte</u></h3>
+
+			<h3><u>réseaux</u></h3>
 										<a href='' target='blank' id='sm_link_website'><i class='fas fa-globe'></i></a>
-										<a href='mailto:steven.aubert@sts-sio-caen.info' id='sm_link_mail'><i class='far fa-envelope'></i></a>
-										<a href='' target='blank' id='sm_link_github'><i class='fab fa-github'></i></a>
-										<a href='' target='blank' id='sm_link_linkedin'><i class='fab fa-linkedin'></i></a>
-										<a href='' target='blank' id='sm_link_insta'><i class='fab fa-instagram'></i></a>
+
+
+										<a href='https://twitter.com/home' id='sm_link_tweeter'><img="image/tweeter.png"></a>
+										<a href='https://www.instagram.com/steve9821419/  'id='image/instagram.png'><i class='instagram.png'></i></a>
 <i class="fab fa-twitter"></i>
 								</div>
 
@@ -241,3 +242,74 @@ Option SISR : Administration des systèmes et des réseaux : le titulaire partic
 
 								</body>
 								</html>
+								</html>
+								<div class='formulaire' id='formulaire'>
+								<?php
+								    echo "<h1>" . $formulaire[0]['title'] . "</h1>";
+								?>
+
+								<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+								<form method='post' id="formulaire" action="#formulaire">
+								    <label for="firstname"><?php echo $formulaire[1]['title_field_firstname']; ?></label>
+								    <input type="text" name="firstname" id="firstname" required="true" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; /* code pour garder rempli les champs dans le cas d'un oubli de certains champs par exemple*/ } ?>">
+								    <label for="name"><?php echo $formulaire[1]['title_field_name']; ?></label>
+								    <input type="text" name="name" id="name" required="true" placeholder="Entrez votre nom" value="<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>">
+								    <label for="email"><?php echo $formulaire[1]['title_field_mail']; ?></label>
+								    <input type="email" name="email" id="email" required="true" placeholder="Entrez votre adresse email" value="<?php if(isset($_POST['email'])){ echo $_POST['email']; } ?>">
+								    <label for="message"><?php echo $formulaire[1]['title_field_message']; ?></label>
+								    <textarea rows="5" name="message" id="message" required="true" placeholder="Entrez votre message" value="<?php if(isset($_POST['message'])){ echo $_POST['message']; } ?>"></textarea>
+								    <div class="g-recaptcha" data-sitekey="6LfY7N8ZAAAAAOB1Q4ehiM0GPyMWoh1GqoT_ey7y"></div>
+								    <input type="submit" value="Envoyer" id="envoyer" name="submitpost">
+								</form>
+
+								<?php
+								    require ('assets/recaptcha/autoload.php');
+
+								    if(isset($_POST['submitpost'])){
+								        if(isset($_POST['g-recaptcha-response'])){
+								            if(!empty($_POST['g-recaptcha-response'])) {
+								                $recaptcha = new \ReCaptcha\ReCaptcha('6LfY7N8ZAAAAAHkzEkgzKioHTDgdU-XGUH6FrVLn');
+								                $resp = $recaptcha->verify($_POST['g-recaptcha-response']); //vérification de la réponse renvoyé par le formulaire de captcha
+								                if ($resp->isSuccess()) { //si la réponse est un succès alors on exécute le code d'envoi du formulaire
+								                // Verified!
+								                    if(isset($_POST['email'])) //si le champ email existe
+								                    {
+								                        if(!empty($_POST['firstname']) and !empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message'])) //si les champs sont complétés
+								                        {   // ----Formats d'encodage----
+								                            $header ="MIMI-Version 1.0\r\n";
+								                            $header .= 'From: "nathannicolle.fr/profil" <steven.aubert@sts-sio-caen.info>' . "\n";
+								                            $header .='Content-Type:text/html; charset="utf-8"'. "\n";
+								                            $header .='Content-Transfer-Encoding: 8bit';
+
+								                            // ----Message----
+								                            $message = '
+								                            <html>
+								                                <body>
+								                                    <ul>Prénom : '.$_POST['firstname']. '</ul>
+								                                    <ul>NOM : '.$_POST['name']. '</ul>
+								                                    <ul>adresse mail : '.$_POST['email']. '</ul>
+								                                    <ul>Message : '.nl2br($_POST['message']). '</ul>
+								                                </body>
+								                            </html>';
+								                            mail("nathan-nicolle@orange.fr", "Mail contact profil pro", $message, $header); //envoi du mail avec la fonction mail(adresse cible, objet, message et en-tête)
+								                            $msg="<p class='form_succes'><i class='fas fa-check'></i> Votre message à bien été envoyé !</p>";
+								                        }else{
+								                            $msg="<p class='form_error'>Veuillez compléter tout les champs !</p>";
+								                        }
+								                    }
+								                }
+								            } else {
+								                $msg_captcha="<p class='form_error_2'><i class='fas fa-times'></i> merci de valider le captcha</p>";
+								            }
+								        }
+								    }
+
+								    if(isset($msg)) {
+								        echo $msg;
+								    } //on écrit le message qu'il soit la confirmation d'envoi ou un message d'erreur
+
+								    if(isset($msg_captcha)) {
+								        echo $msg_captcha;
+								    }
+								?>
+								</div>
