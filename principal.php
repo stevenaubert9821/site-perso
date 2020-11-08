@@ -11,9 +11,6 @@
 	  include("header.php");
 	?>
 
-
-
-
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -28,31 +25,20 @@
 			<ul>
 				<li>Aubert Steven</li>
 			</ul>
+
+
 			<ul class="list_menu">
 
-				<div class="apropos">
-				<li><a href="#">A propos</a></li>
-			</div>
+				<li><a href="#A propos">A propos</a></li>
 
-					<div class="competence">
-				<li><a href="#">Compétence</a></li>
-	</div>
+				<li><a href="#Compétence">Compétence</a></li>
 
+				<li><a href="#Experience">Experience </a></li>
 
+				<li><a href="#Formation">Formation</a></li>
 
+				<li><a href="#Contact">Contact</a></li>
 
-			<div class="experience">
-				<li><a href="#">Experience </a></li>
-				</div>
-
-
-			<div class="formation">
-				<li><a href="#">Formation</a></li>
-				</div>
-
-			<div class="contact">
-				<li><a href="#">Contact</a></li>
-	</div>
 
 			</ul>
 		</header>
@@ -68,8 +54,8 @@
 
 				<H1><u> acceuil</u></h1>
 
-					<br>
-					<H1>AUBERT <br>Steven</H1>
+
+
 					<H3>Motivé et essai de comprendre jusqu'au bout</h3>
 						<img src="image/steven.jpg">
 
@@ -79,7 +65,7 @@
 
 					</div>
 
-					<div class="Apropos">
+					<div class="Apropos" id="A propos">
 						<br>
 						<H1><u>A propos</u></H1>
 
@@ -98,7 +84,7 @@
 
 						</div>
 
-						<div class="Compétence">
+						<div class="Compétence" id="Compétence">
 							<H3><u>COMPETENCES</u><H3>
 
 								<label for="file">html:</label>
@@ -122,7 +108,7 @@
 
 
 							</div>
-							<div class="Experienceprofessionel">
+							<div class="Experienceprofessionel" id="Experience">
 
 								<H3><u>	EXPERIENCE PROFESSIONNELLE</u></h3>
 
@@ -135,6 +121,7 @@
 												<li>Réorganisation Baie de Brassage</li>
 												<li> Réparation imprimante thermique</li>
 												<li>Installation borne wifi</li>
+												<img src="image/logo-charal.png">
 
 											</ul>
 										</div>
@@ -144,6 +131,7 @@
 											<li> Animateur d’un groupe de jeunes</li>
 											<li> Création et gestion d’activité, de grands jeux et de veillés.</li>
 										</ul>
+											<img src="image/pastoral.png">
 									</div>
 									<div class="aubert">
 										<H4><u>	Aubertmenuiserie– CDD</u></h4><br>
@@ -151,6 +139,7 @@
 											<ul>
 												<li>Manutention de fenêtre</li>
 												<li>Travaux chez le particulier et sur des constructions	d’immeubles/ lotissements</li>
+													<img src="image/logo aubert.png">
 											</ul>
 										</div>
 										<div class="info">
@@ -161,7 +150,7 @@
 														<li>Installations de visioconférences </li>
 														<li>Installations et configuration de téléphones IP </li>
 														<li>Câblage en passant dans des sous-sols et des sous plafonds </li>
-
+	<img src="image/G2.png">
 
 													</ul>
 												</div><!-- liste g2-info -->
@@ -171,7 +160,8 @@
 
 										</div>
 
-	<div class="formation">
+	<div class="formation" id="Formation
+	on">
 
 		<h3><u>Formation</u></h3>
 
@@ -205,18 +195,43 @@
 		<img src="image/logo.jpg">
 	</div>
 
-
+	</div>
 
 										<div class="sm_side">
 
-	<h3><u>contacte</u></h3>
-											<a href='' target='blank' id='sm_link_website'><i class='fas fa-globe'></i></a>
-											<a href='mailto:steven.aubert@sts-sio-caen.info' id='sm_link_mail'><i class='far fa-envelope'></i></a>
-											<a href='' target='blank' id='sm_link_github'><i class='fab fa-github'></i></a>
-											<a href='' target='blank' id='sm_link_linkedin'><i class='fab fa-linkedin'></i></a>
-											<a href='' target='blank' id='sm_link_insta'><i class='fab fa-instagram'></i></a>
 
-										</div>
+				<h3><u>réseaux</u></h3>
+											<a href='' target='blank' id='sm_link_website'><i class='fas fa-globe'></i></a>
+
+
+											<a href='https://twitter.com/home' id='sm_link_tweeter'><i class="fab fa-twitter"></i></a>
+											<a href='https://www.instagram.com/steve9821419/  'id='image/instagram.png'><i class='instagram.png'></i></a>
+	<i class="fab fa-twitter"></i>
+									</div>
+
+
+
+
+	<h3>Contact</h3>
+	<p>mail pro:steven.aubert@sts-sio-caen.info</p>
+	<p>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 									</body>
@@ -224,33 +239,39 @@
 
 
 
+
+
+
+
 </html>
 <div class='formulaire' id='formulaire'>
 <?php
-    echo "<h1>" . $formulaire[0]['title'] . "</h1>";
+    echo "<h1>Contact</h1>";
 ?>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form method='post' id="formulaire" action="#formulaire">
-    <label for="firstname"><?php echo $formulaire[1]['title_field_firstname']; ?></label>
+    <label for="firstname">prénom</label>
     <input type="text" name="firstname" id="firstname" required="true" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; /* code pour garder rempli les champs dans le cas d'un oubli de certains champs par exemple*/ } ?>">
-    <label for="name"><?php echo $formulaire[1]['title_field_name']; ?></label>
+    <label for="name">nom</label>
     <input type="text" name="name" id="name" required="true" placeholder="Entrez votre nom" value="<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>">
-    <label for="email"><?php echo $formulaire[1]['title_field_mail']; ?></label>
+    <label for="email">email</label>
     <input type="email" name="email" id="email" required="true" placeholder="Entrez votre adresse email" value="<?php if(isset($_POST['email'])){ echo $_POST['email']; } ?>">
-    <label for="message"><?php echo $formulaire[1]['title_field_message']; ?></label>
+    <label for="message">message</label>
     <textarea rows="5" name="message" id="message" required="true" placeholder="Entrez votre message" value="<?php if(isset($_POST['message'])){ echo $_POST['message']; } ?>"></textarea>
-    <div class="g-recaptcha" data-sitekey="6LfY7N8ZAAAAAOB1Q4ehiM0GPyMWoh1GqoT_ey7y"></div>
+    <div class="g-recaptcha" data-sitekey="6LemleAZAAAAABzcrvjyKlcFgPdezwyJLgZ5L-wI
+"></div>
     <input type="submit" value="Envoyer" id="envoyer" name="submitpost">
 </form>
 
 <?php
-    require ('assets/recaptcha/autoload.php');
+   ('recaptcha/autoload.php');
 
     if(isset($_POST['submitpost'])){
         if(isset($_POST['g-recaptcha-response'])){
             if(!empty($_POST['g-recaptcha-response'])) {
-                $recaptcha = new \ReCaptcha\ReCaptcha('6LfY7N8ZAAAAAHkzEkgzKioHTDgdU-XGUH6FrVLn');
+                $recaptcha = new \ReCaptcha\ReCaptcha('6LemleAZAAAAAP1qf1bBgqkCB3wcWJ2uIFN1fmPq
+');
                 $resp = $recaptcha->verify($_POST['g-recaptcha-response']); //vérification de la réponse renvoyé par le formulaire de captcha
                 if ($resp->isSuccess()) { //si la réponse est un succès alors on exécute le code d'envoi du formulaire
                 // Verified!
@@ -259,7 +280,7 @@
                         if(!empty($_POST['firstname']) and !empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message'])) //si les champs sont complétés
                         {   // ----Formats d'encodage----
                             $header ="MIMI-Version 1.0\r\n";
-                            $header .= 'From: "nathannicolle.fr/profil" <nathan-nicolle@orange.fr>' . "\n";
+                            $header .= 'From: "stevenaubert.fr/profil" <steven.aubert@sts-sio-caen.info>' . "\n";
                             $header .='Content-Type:text/html; charset="utf-8"'. "\n";
                             $header .='Content-Transfer-Encoding: 8bit';
 
@@ -273,7 +294,7 @@
                                     <ul>Message : '.nl2br($_POST['message']). '</ul>
                                 </body>
                             </html>';
-                            mail("nathan-nicolle@orange.fr", "Mail contact profil pro", $message, $header); //envoi du mail avec la fonction mail(adresse cible, objet, message et en-tête)
+                            mail("steven.aubert@sts-sio-caen.info ", "Mail contact profil pro", $message, $header); //envoi du mail avec la fonction mail(adresse cible, objet, message et en-tête)
                             $msg="<p class='form_succes'><i class='fas fa-check'></i> Votre message à bien été envoyé !</p>";
                         }else{
                             $msg="<p class='form_error'>Veuillez compléter tout les champs !</p>";
@@ -295,3 +316,15 @@
     }
 ?>
 </div>
+
+
+
+
+
+<footer>
+<p>bbtrejheiu</p>
+
+	<a href='https://twitter.com/home' id='sm_link_tweeter'><i class="fab fa-twitter"></i></a>
+
+
+</footer>
