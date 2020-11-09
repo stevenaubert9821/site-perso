@@ -48,16 +48,18 @@
 		</section>
 
 		<div class="contener">
-
+<br>
 			<div class="acceuil">
 
-
+<br>
 				<H1><u> acceuil</u></h1>
 
 
 
 					<H3>Motivé et essai de comprendre jusqu'au bout</h3>
-						<img src="image/steven.jpg">
+
+
+						<img  src="image/steven.jpg" height="310"	width="280">
 
 
 
@@ -78,9 +80,9 @@
 							Je pratique divers sports comme le VTT ou le cross pendant les vacances.<br>
 							J'aime bien le réseaux. Je suis très intéréssé par le dévelopement de jeux mais très peux par le dévellopement web.<br>
 							<br>
-							<img src="image/réseaux.jpg">
+							<img src="image/réseaux.jpg""200"	width="220">
 
-							<img src="image/escrime.jpg">
+							<img src="image/escrime.jpg"height="200"	width="220">
 
 						</div>
 
@@ -108,60 +110,71 @@
 
 
 							</div>
+
+
 							<div class="Experienceprofessionel" id="Experience">
 
 								<H3><u>	EXPERIENCE PROFESSIONNELLE</u></h3>
 
 									<div class="experience">
 
-										<div class="charal">
-											<h4><u>Charal Flers – Stagiaire service informatique</u></h4><br>
-											<p>Flers (14) – du 23 septembre au 18 octobre 2019</p>
+
+
+
+
+
+
 											<ul>
+
+										<li>	<h4><u>Charal Flers – Stagiaire service informatique</u></h4></li>
+										<li>	<p>Flers (14) – du 23 septembre au 18 octobre 2019</p></li>
+
 												<li>Réorganisation Baie de Brassage</li>
 												<li> Réparation imprimante thermique</li>
 												<li>Installation borne wifi</li>
-												<img src="image/logo-charal.png">
+											<li>	<img src="image/logo-charal.png"></li>
 
-											</ul>
-										</div>
-										<div class="pastoral">
-											<h4><u>	Pastoral des jeunes – animateur Stagiaire BAFA</u></h4><br>
-											<p>Camps-à Lourdes – - Aout 2019 – 1 semaine puis 4 weekends à Caen (14)</p>
+
+
+
+
+
+									<li>		<h4><u>	Pastoral des jeunes – animateur Stagiaire BAFA</u></h4></li>
+									<li>		<p>Camps-à Lourdes – - Aout 2019 – 1 semaine puis 4 weekends à Caen (14)</p></li>
+
 											<li> Animateur d’un groupe de jeunes</li>
 											<li> Création et gestion d’activité, de grands jeux et de veillés.</li>
-										</ul>
-											<img src="image/pastoral.png">
-									</div>
-									<div class="aubert">
-										<H4><u>	Aubertmenuiserie– CDD</u></h4><br>
-											<p>Saint Pierre du Bu (14) – 17 juin au 31 juillet 2020 </p>
-											<ul>
+
+									<li>		<img src="image/pastoral.png"></li>
+
+
+									<li>	<H4><u>	Aubertmenuiserie– CDD</u></h4></li>
+										<li>	<p>Saint Pierre du Bu (14) – 17 juin au 31 juillet 2020 </p></li>
+
 												<li>Manutention de fenêtre</li>
 												<li>Travaux chez le particulier et sur des constructions	d’immeubles/ lotissements</li>
-													<img src="image/logo aubert.png">
-											</ul>
-										</div>
-										<div class="info">
-											<h4><u>G2-info– Stagiaire</u></H4>
-												<p>Ronai (14) 2017-2019- 16 semaines répartie sur 4 sessions de 4 à 6 semaines<p>
-													<ul>
+												<li>	<img src="image/logo aubert.png"></li>
+
+
+
+							<li><h4><u>G2-info– Stagiaire</u></H4></li>
+											<li>	<p>Ronai (14) 2017-2019- 16 semaines répartie sur 4 sessions de 4 à 6 semaines<p></li>
+
 														<li>Recyclage d’ordinateur </li>
 														<li>Installations de visioconférences </li>
 														<li>Installations et configuration de téléphones IP </li>
 														<li>Câblage en passant dans des sous-sols et des sous plafonds </li>
-	<img src="image/G2.png">
+	<li><img src="image/G2.png"></li>
 
-													</ul>
-												</div><!-- liste g2-info -->
+</ul>
+
 											</div>
 
 
 
 										</div>
 
-	<div class="formation" id="Formation
-	on">
+	<div class="formation" id="Formation">
 
 		<h3><u>Formation</u></h3>
 
@@ -192,7 +205,9 @@
 			</div>
 
 	<div class="logo">
-		<img src="image/logo.jpg">
+
+		<img src="image/logo.jpg"><p>Centre de formation Continue Sainte Ursule<br>30 Rue de la Miséricorde, 14000 Caen<p>
+
 	</div>
 
 	</div>
@@ -201,20 +216,20 @@
 
 
 				<h3><u>réseaux</u></h3>
-											<a href='' target='blank' id='sm_link_website'><i class='fas fa-globe'></i></a>
+											<a href='' target='blank'<p>retour au site</p><i class='fas fa-globe'></i></a>
 
 
-											<a href='https://twitter.com/home' id='sm_link_tweeter'><i class="fab fa-twitter"></i></a>
-											<a href='https://www.instagram.com/steve9821419/  'id='image/instagram.png'><i class='instagram.png'></i></a>
+											<a href='https://twitter.com/home'<p>Twitter</p><i class="fab fa-twitter"></i></a>
+											<a href='https://www.instagram.com/steve9821419/  ' <p>Instagram</p><i class='instagram.png'></i></a>
 	<i class="fab fa-twitter"></i>
 									</div>
 
 
 
 
-	<h3>Contact</h3>
-	<p>mail pro:steven.aubert@sts-sio-caen.info</p>
-	<p>
+
+
+
 
 
 
@@ -322,9 +337,10 @@
 
 
 <footer>
-<p>bbtrejheiu</p>
+	<a href=  "mentionsLegales-3/mentionsLegales-3.html")</a>
+<p>Mentions-légale</p>
 
-	<a href='https://twitter.com/home' id='sm_link_tweeter'><i class="fab fa-twitter"></i></a>
-
+		<a href='https://twitter.com/home')</a><p>Twitter</p>
+	<a href='https://www.instagram.com/steve9821419/')</a><p>Instagram</p>
 
 </footer>
