@@ -1,3 +1,3 @@
 <?php
-    $logo=['Steven AUBERT'];
+    $logo=[''];
     $menu=['A propos','Compétences','Expérience','Formation','Contact'];

@@ -11,25 +11,16 @@
 	  include("header.php");
 	?>
 
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<title>principal</title>
-		<link rel="stylesheet" type="text/css" href="preset/principal.css">
-	</head>
-
-	<body>
-
 		<header class="header_menu">
-			<ul>
-				<li>Aubert Steven</li>
-			</ul>
+
+
+
 
 
 			<ul class="list_menu">
+					<li>Aubert Steven</li>
 
-				<li><a href="#A propos">A propos</a></li>
+				<li><a href="#A_propos">A propos</a></li>
 
 				<li><a href="#Compétence">Compétence</a></li>
 
@@ -37,7 +28,7 @@
 
 				<li><a href="#Formation">Formation</a></li>
 
-				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#formulaire">Contact</a></li>
 
 
 			</ul>
@@ -67,7 +58,7 @@
 
 					</div>
 
-					<div class="Apropos" id="A propos">
+					<div class="Apropos" id="A_propos">
 						<br>
 						<H1><u>A propos</u></H1>
 
@@ -215,10 +206,10 @@
 										<div class="sm_side">
 
 
+			
+											<a href="#" class="btn btn-default">Retour en haut ↑</a>
+
 				<h3><u>réseaux</u></h3>
-											<a href='' target='blank'<p>retour au site</p><i class='fas fa-globe'></i></a>
-
-
 											<a href='https://twitter.com/home'<p>Twitter</p><i class="fab fa-twitter"></i></a>
 											<a href='https://www.instagram.com/steve9821419/  ' <p>Instagram</p><i class='instagram.png'></i></a>
 	<i class="fab fa-twitter"></i>
@@ -240,25 +231,8 @@
 
 
 
+</body>
 
-
-
-
-
-
-
-
-
-									</body>
-									</html>
-
-
-
-
-
-
-
-</html>
 <div class='formulaire' id='formulaire'>
 <?php
     echo "<h1>Contact</h1>";
@@ -337,10 +311,16 @@
 
 
 <footer>
+
 	<a href=  "mentionsLegales-3/mentionsLegales-3.html")</a>
 <p>Mentions-légale</p>
 
-		<a href='https://twitter.com/home')</a><p>Twitter</p>
-	<a href='https://www.instagram.com/steve9821419/')</a><p>Instagram</p>
-
+<ul class="lisstefooter">
+	<li>	<a href='https://twitter.com/home')</a><p>Twitter</p></li>
+	<li><a href='https://www.instagram.com/steve9821419/')</a><p>Instagram</p></li>
+</ul>
 </footer>
+
+</html>
+
+<?
