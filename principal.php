@@ -49,10 +49,10 @@
 
 					<H3>Motivé et essai de comprendre jusqu'au bout</h3>
 
+<div class="steven" id="steven">
+						<img  src="image/steven.jpg" >
 
-						<img  src="image/steven.jpg" height="310"	width="280">
-
-
+</div>
 
 
 
@@ -206,13 +206,13 @@
 										<div class="sm_side">
 
 
-			
+
 											<a href="#" class="btn btn-default">Retour en haut ↑</a>
 
 				<h3><u>réseaux</u></h3>
 											<a href='https://twitter.com/home'<p>Twitter</p><i class="fab fa-twitter"></i></a>
-											<a href='https://www.instagram.com/steve9821419/  ' <p>Instagram</p><i class='instagram.png'></i></a>
-	<i class="fab fa-twitter"></i>
+											<a href='https://www.instagram.com/steve9821419/  ' <p>Instagram</p><id class='instagram.png'></i></a>
+
 									</div>
 
 
@@ -231,7 +231,7 @@
 
 
 
-</body>
+
 
 <div class='formulaire' id='formulaire'>
 <?php
@@ -308,7 +308,7 @@
 
 
 
-
+</body>
 
 <footer>
 
