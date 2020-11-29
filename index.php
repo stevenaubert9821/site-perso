@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>principal</title>
 	<link rel="stylesheet" type="text/css" href="preset/principal.css">
 </head>
 <body>
-  <?php
-	  include("header.php");
+  <php
+	  include "src/header.php";
 	?>
 
-		<header class="header_menu">
+		<header class="src/ header_menu">
 
 
 
@@ -49,10 +49,10 @@
 
 					<H3>Motivé et essai de comprendre jusqu'au bout</h3>
 
-<div class="steven" id="steven">
-						<img  src="image/steven.jpg" >
+<a id="steven">
+<img src="image/steven.jpg" alt="">
+</a>
 
-</div>
 
 
 
@@ -71,25 +71,25 @@
 							Je pratique divers sports comme le VTT ou le cross pendant les vacances.<br>
 							J'aime bien le réseaux. Je suis très intéréssé par le dévelopement de jeux mais très peux par le dévellopement web.<br>
 							<br>
-							<img src="image/réseaux.jpg""200"	width="220">
+							<img src="image/réseaux.jpg" alt="" height="200" width="220">
 
-							<img src="image/escrime.jpg"height="200"	width="220">
+							<img src="image/escrime.jpg" alt="" height="200" width="220">
 
 						</div>
 
 						<div class="Compétence" id="Compétence">
-							<H3><u>COMPETENCES</u><H3>
+							<h3><u>COMPETENCES</u></h3>
 
 								<label for="file">html:</label>
 
-								<progress id="file" max="100" value="50"> 30% </progress>
+								<progress class="file" max="100" value="50"> 30% </progress>
 
 
 
 
 								<label for="file">css:</label>
 
-								<progress id="file" max="100" value="50"> 30% </progress>
+								<progress class="file" max="100" value="50"> 30% </progress>
 
 
 
@@ -100,7 +100,7 @@
 								<progress id="file" max="100" value="5"> 10% </progress>
 
 
-							</div>
+
 
 
 							<div class="Experienceprofessionel" id="Experience">
@@ -123,7 +123,7 @@
 												<li>Réorganisation Baie de Brassage</li>
 												<li> Réparation imprimante thermique</li>
 												<li>Installation borne wifi</li>
-											<li>	<img src="image/logo-charal.png"></li>
+											<li>	<img src="image/logo-charal.png" alt=""></li>
 
 
 
@@ -136,7 +136,7 @@
 											<li> Animateur d’un groupe de jeunes</li>
 											<li> Création et gestion d’activité, de grands jeux et de veillés.</li>
 
-									<li>		<img src="image/pastoral.png"></li>
+									<li>		<img src="image/pastoral.png" alt=""></li>
 
 
 									<li>	<H4><u>	Aubertmenuiserie– CDD</u></h4></li>
@@ -144,7 +144,7 @@
 
 												<li>Manutention de fenêtre</li>
 												<li>Travaux chez le particulier et sur des constructions	d’immeubles/ lotissements</li>
-												<li>	<img src="image/logo aubert.png"></li>
+												<li>	<img src="image/logo aubert.png" alt=""></li>
 
 
 
@@ -155,7 +155,9 @@
 														<li>Installations de visioconférences </li>
 														<li>Installations et configuration de téléphones IP </li>
 														<li>Câblage en passant dans des sous-sols et des sous plafonds </li>
-	<li><img src="image/G2.png"></li>
+	<li><img src="image/G2.png" alt=""></li>
+
+		<li><a href="image/CV aubert steven réseaux.pdf"><input type="button"value="Mon CV"></a></li>
 
 </ul>
 
@@ -181,7 +183,7 @@
 
 		<div class="SISR">
 			<h4>SISR</h4>
-	Option SISR : Administration des systèmes et des réseaux : le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements du réseaux.<br>
+<p>	Option SISR : Administration des systèmes et des réseaux : le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements du réseaux.<br>
 	 Il acquiert ainsi les compétences pour concevoir une solution d'infrastructure réseau, <br>
 	 l'installer, la tester et la déployer. L'élève apprend aussi à administrer et superviser ce réseau.</p>
 		</div>
@@ -197,7 +199,7 @@
 
 	<div class="logo">
 
-		<img src="image/logo.jpg"><p>Centre de formation Continue Sainte Ursule<br>30 Rue de la Miséricorde, 14000 Caen<p>
+		<img src="image/logo.jpg" alt=""><p>Centre de formation Continue Sainte Ursule<br>30 Rue de la Miséricorde, 14000 Caen</p>
 
 	</div>
 
@@ -207,11 +209,11 @@
 
 
 
-											<a href="#" class="btn btn-default">Retour en haut ↑</a>
+											<a href="#" class="btn btn-default"><p>Retour en haut ↑<p> </a>
 
 				<h3><u>réseaux</u></h3>
-											<a href='https://twitter.com/home'<p>Twitter</p><i class="fab fa-twitter"></i></a>
-											<a href='https://www.instagram.com/steve9821419/  ' <p>Instagram</p><id class='instagram.png'></i></a>
+											<a href='https://twitter.com/home'<p>Twitter</p> </a>
+											<a href='https://www.instagram.com/steve9821419/'<p>Instagram</p><id class='instagram.png'></i></a>
 
 									</div>
 
@@ -312,15 +314,16 @@
 
 <footer>
 
-	<a href=  "mentionsLegales-3/mentionsLegales-3.html")</a>
-<p>Mentions-légale</p>
+	<a href="mentionsLegales-3/mentionsLegales-3.html">Mentions-légale</a>
+
 
 <ul class="lisstefooter">
-	<li>	<a href='https://twitter.com/home')</a><p>Twitter</p></li>
-	<li><a href='https://www.instagram.com/steve9821419/')</a><p>Instagram</p></li>
+	<li><a href='https://twitter.com/home'>Twitter</a></li>
+
 </ul>
+<a href='https://www.instagram.com/steve9821419/'>Instagram</a>
 </footer>
 
 </html>
 
-<?
+</php
