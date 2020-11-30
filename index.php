@@ -66,10 +66,11 @@
 
 
 						<p>Je m'appelle Steven Aubert, j'ai 19 ans et je suis en BTS Service informatique aux organisation au centre de formation Sainte Ursule à Caen.<br>
-							J'ai comme passion l'escrime que j'effectue depuis 7 ans au club d'escrime à Falaise. Je suis animateur pendant les vacances scolaires et certains week-ends de l'année.<br>
-							Je fait aussi à mes heures perdues de la modélisation 3D que j'imprime via mon imprimante 3D. J'aime bien l'informatique en générale et les jeux vidéo.<br>
+							J'ai comme passion l'escrime que j'effectue depuis 7 ans au club d'escrime de Falaise. Je suis animateur pendant les vacances scolaires et certains week-ends de l'année.<br>
+							Je fais aussi à mes heures perdues de la modélisation 3D que j'imprime via mon imprimante 3D. J'aime bien l'informatique en générale ainsi que les jeux vidéo.<br>
 							Je pratique divers sports comme le VTT ou le cross pendant les vacances.<br>
-							J'aime bien le réseaux. Je suis très intéréssé par le dévelopement de jeux mais très peux par le dévellopement web.<br>
+							J'aime bien le réseau dont j'en ferais mon métier car on peut à la fois etre dans un bureaux à configurer le matriel réseaux ou mettre en place les plans,<br> procédures et etre le lendemain chez le client à faire l'installation et less testes du réseaux.<br>
+							 Je suis très intéréssé par le développement de jeux mais très peux par le dévellopement web,<br> mais je compte continuer à en faire comme loisir en y créant par exemple un site en html/css avec toute mes procédures réseaux .<br><p>
 							<br>
 							<img src="image/réseaux.jpg" alt="" height="200" width="220">
 
@@ -157,7 +158,7 @@
 														<li>Câblage en passant dans des sous-sols et des sous plafonds </li>
 	<li><img src="image/G2.png" alt=""></li>
 
-		<li><a href="image/CV aubert steven réseaux.pdf"><input type="button"value="Mon CV"></a></li>
+		<li><a href="image/CV aubert steven réseaux.pdf"><input type="button" value="Mon CV"></a></li>
 
 </ul>
 
@@ -176,7 +177,7 @@
 
 	<p>Le BTS SIO forme les étudiants aux métiers d'administrateur réseaux ou aux métiers de dévelopeurs pouvoirs directeement intégrer le milieus professionnelle <br>
 		ou continuer des études dans le domaine de l'informatique.<br>
-		Cette formation est séparée en deux option dons l'option SISI et l'option SLAM</p>
+		Cette formation est séparée en deux option dons l'option SSIR et l'option SLAM</p>
 
 
 
@@ -185,7 +186,8 @@
 			<h4>SISR</h4>
 <p>	Option SISR : Administration des systèmes et des réseaux : le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements du réseaux.<br>
 	 Il acquiert ainsi les compétences pour concevoir une solution d'infrastructure réseau, <br>
-	 l'installer, la tester et la déployer. L'élève apprend aussi à administrer et superviser ce réseau.</p>
+	 l'installer, la tester et la déployer. L'élève apprend aussi à administrer et superviser ce réseau.<br>
+C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 		</div>
 
 			<div class="SLAM">
@@ -196,7 +198,7 @@
 				Il acquiert ainsi des compétences en conception et développement d'une solution applicative,<br>
 				 en maintenance de celle-ci, mais aussi en bases de données et en gestion des données numériques.</p>
 			</div>
-
+<h4><u>Etablissement fréquenté</u><h4>
 	<div class="logo">
 
 		<img src="image/logo.jpg" alt=""><p>Centre de formation Continue Sainte Ursule<br>30 Rue de la Miséricorde, 14000 Caen</p>
@@ -209,11 +211,11 @@
 
 
 
-											<a href="#" class="btn btn-default"><p>Retour en haut ↑<p> </a>
+											<a href="#" class="btn-btn-default"><p>Retour en haut ↑<p></a>
 
 				<h3><u>réseaux</u></h3>
-											<a href='https://twitter.com/home'<p>Twitter</p> </a>
-											<a href='https://www.instagram.com/steve9821419/'<p>Instagram</p><id class='instagram.png'></i></a>
+											<a href='https://twitter.com/home'><p>Twitter</p> </a>
+											<a href='https://www.instagram.com/steve9821419/'><p>Instagram</p></i></a>
 
 									</div>
 
@@ -314,14 +316,14 @@
 
 <footer>
 
-	<a href="mentionsLegales-3/mentionsLegales-3.html">Mentions-légale</a>
+	<a href="mentionsLegales-3/mentionsLegales-3.html">Mentions-légales</a>
 
 
 <ul class="lisstefooter">
 	<li><a href='https://twitter.com/home'>Twitter</a></li>
-
-</ul>
 <a href='https://www.instagram.com/steve9821419/'>Instagram</a>
+</ul>
+
 </footer>
 
 </html>
