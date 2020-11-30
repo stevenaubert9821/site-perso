@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="preset/principal.css">
 </head>
 <body>
-  <php
+  <?php
 	  include "src/header.php";
 	?>
 
@@ -28,26 +28,26 @@
 
 				<li><a href="#Formation">Formation</a></li>
 
-				<li><a href="#formulaire">Contact</a></li>
+				<li><a href="#Contact">Contact</a></li>
 
 
 			</ul>
 		</header>
-		<section class="container">
 
 
-		</section>
+
+
 
 		<div class="contener">
 <br>
 			<div class="acceuil">
 
 <br>
-				<H1><u> acceuil</u></h1>
+				<h1><u> acceuil</u></h1>
 
 
 
-					<H3>Motivé et essai de comprendre jusqu'au bout</h3>
+					<h3>Motivé et essai de comprendre jusqu'au bout</h3>
 
 <a id="steven">
 <img src="image/steven.jpg" alt="">
@@ -145,7 +145,7 @@
 
 												<li>Manutention de fenêtre</li>
 												<li>Travaux chez le particulier et sur des constructions	d’immeubles/ lotissements</li>
-												<li>	<img src="image/logo aubert.png" alt=""></li>
+												<li><img src="image/logo aubert.png" alt=""></li>
 
 
 
@@ -158,7 +158,7 @@
 														<li>Câblage en passant dans des sous-sols et des sous plafonds </li>
 	<li><img src="image/G2.png" alt=""></li>
 
-		<li><a href="image/CV aubert steven réseaux.pdf"><input type="button" value="Mon CV"></a></li>
+		<li><a href="image/CV_aubert_steven_ réseaux.pdf" class="btn_download">Mon CV</a></li>
 
 </ul>
 
@@ -198,14 +198,14 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 				Il acquiert ainsi des compétences en conception et développement d'une solution applicative,<br>
 				 en maintenance de celle-ci, mais aussi en bases de données et en gestion des données numériques.</p>
 			</div>
-<h4><u>Etablissement fréquenté</u><h4>
+<h4><u>Etablissement fréquenté</u></h4>
 	<div class="logo">
 
 		<img src="image/logo.jpg" alt=""><p>Centre de formation Continue Sainte Ursule<br>30 Rue de la Miséricorde, 14000 Caen</p>
 
 	</div>
 
-	</div>
+
 
 										<div class="sm_side">
 
@@ -239,7 +239,7 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 
 
 
-<div class='formulaire' id='formulaire'>
+<div class='formulaire' id='Contact'>
 <?php
     echo "<h1>Contact</h1>";
 ?>
@@ -247,13 +247,13 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form method='post' id="formulaire" action="#formulaire">
     <label for="firstname">prénom</label>
-    <input type="text" name="firstname" id="firstname" required="true" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; /* code pour garder rempli les champs dans le cas d'un oubli de certains champs par exemple*/ } ?>">
+    <input type="text" name="firstname" id="firstname" required placeholder="Entrez votre prénom" value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; /* code pour garder rempli les champs dans le cas d'un oubli de certains champs par exemple*/ } ?>">
     <label for="name">nom</label>
-    <input type="text" name="name" id="name" required="true" placeholder="Entrez votre nom" value="<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>">
+    <input type="text" name="name" id="name" required placeholder="Entrez votre nom" value="<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>">
     <label for="email">email</label>
-    <input type="email" name="email" id="email" required="true" placeholder="Entrez votre adresse email" value="<?php if(isset($_POST['email'])){ echo $_POST['email']; } ?>">
+    <input type="email" name="email" id="email" required placeholder="Entrez votre adresse email" value="<?php if(isset($_POST['email'])){ echo $_POST['email']; } ?>">
     <label for="message">message</label>
-    <textarea rows="5" name="message" id="message" required="true" placeholder="Entrez votre message" value="<?php if(isset($_POST['message'])){ echo $_POST['message']; } ?>"></textarea>
+    <textarea rows="5" name="message" id="message" required placeholder="Entrez votre message" value="<?php if(isset($_POST['message'])){ echo $_POST['message']; } ?>"></textarea>
     <div class="g-recaptcha" data-sitekey="6LemleAZAAAAABzcrvjyKlcFgPdezwyJLgZ5L-wI
 "></div>
     <input type="submit" value="Envoyer" id="envoyer" name="submitpost">
@@ -310,11 +310,11 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
         echo $msg_captcha;
     }
 ?>
-</div>
 
 
 
-</body>
+
+
 
 <footer>
 
@@ -328,7 +328,4 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 </ul>
 
 </footer>
-
-</html>
-
-</php
+</body
