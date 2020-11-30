@@ -101,7 +101,7 @@
 								<progress id="file" max="100" value="5"> 10% </progress>
 
 
-
+</div>
 
 
 							<div class="Experienceprofessionel" id="Experience">
@@ -211,11 +211,13 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 
 
 
-											<a href="#" class="btn-btn-default"><p>Retour en haut ↑<p></a>
+
+
+									<a href="#">Retour en haut ↑</a>
 
 				<h3><u>réseaux</u></h3>
-											<a href='https://twitter.com/home'><p>Twitter</p> </a>
-											<a href='https://www.instagram.com/steve9821419/'><p>Instagram</p></i></a>
+											<a href='https://twitter.com/home'><p>Twitter</p></a>
+											<a href='https://www.instagram.com/steve9821419/'><p>Instagram</p></a>
 
 									</div>
 
@@ -316,12 +318,13 @@ C'est cette option que je veus intégrer comme expliqué ci-dessu.<p>
 
 <footer>
 
-	<a href="mentionsLegales-3/mentionsLegales-3.html">Mentions-légales</a>
+
 
 
 <ul class="lisstefooter">
+<li>	<a href="mentionsLegales-3/mentionsLegales-3.html">Mentions-légales</a></li>
 	<li><a href='https://twitter.com/home'>Twitter</a></li>
-<a href='https://www.instagram.com/steve9821419/'>Instagram</a>
+<li><a href='https://www.instagram.com/steve9821419/'>Instagram</a></li>
 </ul>
 
 </footer>
